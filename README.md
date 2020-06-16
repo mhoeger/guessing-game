@@ -8,4 +8,6 @@ In this project, there are examples of:
 - Live-refresh with **SignalR** and Azure Functions
 - Writing to **Cosmos DB** using an Azure Function binding
 - Using the **Cosmos DB SDK** within an Azure Function
-- Bad front-end code (tried my best 🙃)
+- Likely bad front-end code 🙃
+
+NOTE: This would be a perfect project with [Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/), but this demo was made a month or so before that service previewed.
