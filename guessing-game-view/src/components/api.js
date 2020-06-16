@@ -1,5 +1,5 @@
 import axios from 'axios'
 export default axios.create({
-  baseURL: 'https://guessing-game.azurewebsites.net',
+  baseURL: 'http://localhost:7071',
   timeout: 5000
 })
