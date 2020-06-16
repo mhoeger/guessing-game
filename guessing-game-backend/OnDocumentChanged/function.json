@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "updateEstimates",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "databaseName": "%Database_Name%",
+      "collectionName": "%ContainerId%",
+      "connectionStringSetting": "Database_Connection",
+      "createLeaseCollectionIfNotExists": true,
+      "feedPollDelay": 500
+    },
+    {
+      "type": "signalR",
+      "name": "signalRMessages",
+      "hubName": "estimates",
+      "direction": "out"
+    }
+  ],
+  "scriptFile": "../dist/OnDocumentChanged/index.js"
+}

@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "dbEstimate",
+      "type": "cosmosDB",
+      "databaseName": "%Database_Name%",
+      "collectionName": "%ContainerId%",
+      "connectionStringSetting": "Database_Connection",
+      "direction": "out"
+    }
+  ],
+  "scriptFile": "../dist/MakeEstimate/index.js"
+}
