@@ -12,7 +12,7 @@
   "dependencies": {
     "@azure/cosmos": "^3.6.3",
     "@types/node": "^13.13.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "canvas": "^2.6.1",
     "cookie": "^0.4.1",
     "d3": "^5.16.0",
